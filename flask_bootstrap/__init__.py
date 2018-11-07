@@ -62,7 +62,7 @@ class Bootstrap(object):
 
     @staticmethod  # noqa: 901
     def load_js(version='4.1.3', jquery_version='3.3.1',
-                popper_version='1.14.4', with_jquery=False, with_popper=False):
+                popper_version='1.14.4', with_jquery=True, with_popper=True):
         """Load Bootstrap and related library's js resources with given version.
 
         .. versionadded:: 0.1.0
