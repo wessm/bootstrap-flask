@@ -57,7 +57,7 @@ class Bootstrap(object):
                   url_for('bootstrap.static', filename='css/' + css_filename)
         else:
             css = '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@%s/dist/css/%s"' \
-                  ' type="text/css">\n' % (version, css_filename)
+                  ' type="text/css">' % (version, css_filename)
         return Markup(css)
 
     @staticmethod  # noqa: 901
