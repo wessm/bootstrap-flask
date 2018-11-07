@@ -42,7 +42,7 @@ class Bootstrap(object):
         app.config.setdefault('BOOTSTRAP_SERVE_LOCAL', False)
 
     @staticmethod
-    def load_css(version='4.1.0'):
+    def load_css(version='4.1.3'):
         """Load Bootstrap's css resources with given version.
 
         .. versionadded:: 0.1.0
@@ -60,8 +60,9 @@ class Bootstrap(object):
                   ' type="text/css">\n' % (version, css_filename)
         return Markup(css)
 
-    @staticmethod
-    def load_js(version='4.1.0', jquery_version='3.3.1', popper_version='1.14.0', with_jquery=True, with_popper=True):
+    @staticmethod  # noqa: 901
+    def load_js(version='4.1.3', jquery_version='3.3.1',
+                popper_version='1.14.4', with_jquery=False, with_popper=False):
         """Load Bootstrap and related library's js resources with given version.
 
         .. versionadded:: 0.1.0
